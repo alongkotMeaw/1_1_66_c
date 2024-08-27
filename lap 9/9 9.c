@@ -7,7 +7,7 @@ int main(){
      FILE *fptr;
      printf("Enter a filename:");
      //gets(name1);
-     fptr= fopen("mydata.txt","r");//ยังไม่ได้
+     fptr= fopen("mydata.txt","r"); //in case first round run at a+ to create file
      if (fptr == NULL) {
             printf ("Cannot open file to write!\n");
             return(-1);
@@ -26,7 +26,7 @@ int main(){
         for(int i = 0;i < strlen(name);i++){
                  if (name[i]==' '&&name[i+1]!=' '||name[i] == '\n')
                      word = word +1;
-               }//นับจำนวน
+               }//ยนร‘ยบยจร“ยนรยน
 
     printf("Lines : %d\n",lin);
     printf("Words : %d\n",word);
