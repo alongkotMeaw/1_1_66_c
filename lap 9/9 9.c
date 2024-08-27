@@ -7,7 +7,7 @@ int main(){
      FILE *fptr;
      printf("Enter a filename:");
      //gets(name1);
-     fptr= fopen("mydata.txt","r"); //in case first round run at a+ to create file
+     fptr= fopen("mydata.txt","r");
      if (fptr == NULL) {
             printf ("Cannot open file to write!\n");
             return(-1);
