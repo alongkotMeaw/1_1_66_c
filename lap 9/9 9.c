@@ -5,11 +5,11 @@ int main(){
     char name[100]="",name1[200],name2;
     int word = 1,lin = 1,spa = 0,i = 0;
      FILE *fptr;
-     printf("Enter a filename:");
-     //gets(name1);
-     fptr= fopen("mydata.txt","r");
+    printf("Enter a filename: ");
+     scanf("%s",name1);
+     fptr= fopen(name1,"r");
      if (fptr == NULL) {
-            printf ("Cannot open file to write!\n");
+            printf ("Cannot open file to write!\n"); //mydata.txt quote1.txt quote2.txt
             return(-1);
     }
 
