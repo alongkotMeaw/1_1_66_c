@@ -4,7 +4,7 @@
 int main()
 {
      FILE *fptr;
-     fptr= fopen("mydata.txt","w");
+     fptr= fopen("mydata.txt","w"); //in case first round run at a+ to create file
      if (fptr == NULL) {
             printf ("Cannot open file to write!\n");
             return(-1);
